@@ -1,0 +1,37 @@
+{
+    "name": "tnmdev/permissions",
+    "description": "User roles and permissions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TNM Developers",
+            "email": "developers@tnm.co.mw"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laravel/framework": "^8.74",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TNM\\Permissions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TNM\\Permissions\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TNM\\Permissions\\PermissionsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "bluecloud/response-builder": "^1.5"
+    }
+}
