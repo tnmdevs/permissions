@@ -11,8 +11,9 @@
     ],
     "minimum-stability": "stable",
     "require-dev": {
-        "laravel/framework": "^8.74",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.23",
+        "laravel/sanctum": "^2.12"
     },
     "autoload": {
         "psr-4": {
@@ -32,6 +33,7 @@
         }
     },
     "require": {
-        "bluecloud/response-builder": "^1.5"
+        "bluecloud/response-builder": "^1.5",
+        "laravel/framework": "^8.74"
     }
 }

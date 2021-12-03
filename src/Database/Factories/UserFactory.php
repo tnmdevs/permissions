@@ -3,16 +3,15 @@
 namespace TNM\Permissions\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use TNM\Permissions\Models\Permission;
+use TNM\Permissions\Models\User;
 
-class PermissionFactory extends Factory
+class UserFactory extends Factory
 {
-    protected $model = Permission::class;
+    protected $model = User::class;
 
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word()
         ];
     }
 }
