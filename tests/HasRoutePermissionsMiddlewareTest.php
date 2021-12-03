@@ -47,11 +47,7 @@ class HasRoutePermissionsMiddlewareTest extends TestCase
             (new HasRoutePermissions())->handle($request, function (){});
         }, ['token']);
 
-        dd($authRequest);
         $response = (new HasRoutePermissions())->handle($request, function (){});
-
-        dd($response->content());
-        dd($request->fullUrl());
 
     }
 }
